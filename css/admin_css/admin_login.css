@@ -1,0 +1,226 @@
+.login-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  background-image: url("../../images/army.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  min-height: 100vh;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.1);
+  background: transparent;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease-in-out;
+}
+
+.aqua {
+  color: #00ffcc;
+}
+
+.forgot-text:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 5px #00ffcc;
+}
+
+.btn {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid transparent;
+  color: white;
+  /* font-weight: bold; */
+
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: darkviolet;
+  border: 2px solid #00ffcc !important;
+  background: #00ffcc;
+  box-shadow: 0 0 8px #00ffcc !important;
+}
+.btn:active {
+  color: white !important;
+  transform: scale(0.97);
+}
+.btn:disabled {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 2px solid transparent !important;
+  color: white !important;
+}
+/* .btn:focus {
+    outline: none !important;
+    background: #00ffcc;
+    box-shadow: 0 0 8px #00ffcc !important;
+    border: 2px solid #00ffcc !important;
+    color: white;
+  } */
+
+.login-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 25px #00ffcc;
+}
+/* Transparent Input Fields */
+.input-field {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white !important;
+  backdrop-filter: blur(5px);
+}
+.input-field:active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white !important;
+  backdrop-filter: blur(5px);
+}
+
+.input-field:focus {
+  outline: none;
+  border: 1px solid #00ffcc !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 0 10px #00ffcc !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo {
+  height: 145px;
+  margin-bottom: 10px;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.focus-style {
+  outline: none;
+  border: 2px solid #00ffcc !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 0 8px #00ffcc !important;
+  transition: all 0.3s ease-in-out;
+}
+/* Placeholder Text */
+.login-card input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-group-text {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-bottom-right-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+}
+
+.card-title {
+  color: #00ffcc !important;
+}
+
+.animate-slidein {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1550px) {
+  .login-card {
+    max-width: 600px;
+    height: 800px !important;
+    padding: 0 10px;
+  }
+  .logo {
+    height: 250px;
+  }
+  .card-title {
+    font-size: 3rem !important;
+    margin-bottom: 20px !important;
+  }
+  .login-card .btn {
+    font-size: 1.5rem !important;
+    padding: 10px 0 !important;
+  }
+  .input-field {
+    font-size: 1.2rem !important;
+    padding: 10px !important;
+  }
+  .form-label {
+    font-size: 1.2rem !important;
+    margin-bottom: 15px;
+  }
+  .forgot-text {
+    font-size: 1.2rem !important;
+  }
+  .authorized-text {
+    font-size: 1.2rem !important;
+  }
+}
+
+/* loader style */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+  backdrop-filter: blur(6px);
+}
+
+
+.loader-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00ffcc;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.loader-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translate(var(--x), var(--y)) scale(0.5) rotate(var(--rotate));
+  
+  animation: flyIn 1s forwards;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  letter-spacing: 2px;
+}
+
+@keyframes flyIn {
+  to {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+}

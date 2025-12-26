@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+.reset-password-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../images/army.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.reset-card {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
+  animation: slideIn 0.5s ease-out;
+}
+
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.btn {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid transparent;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.btn:hover {
+  color : darkviolet;
+  border: 2px solid #00ffcc !important;
+  background: #00ffcc;
+  box-shadow: 0 0 8px #00ffcc !important;
+}
+.btn:active {
+  color: white !important;
+  transform: scale(0.97);
+}
+
+.btn:disabled {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 2px solid transparent !important;
+  color: white !important;
+}
+.btn:focus {
+  outline: none !important;
+  background: #00ffcc;
+  box-shadow: 0 0 8px #00ffcc !important;
+  border: 2px solid #00ffcc !important;
+  color: white;
+}
+
+.reset-card.show:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 25px #00ffcc;
+}
+/* Transparent Input Fields */
+.input-field {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white !important;
+  backdrop-filter: blur(5px);
+}
+.input-field:active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white !important;
+  backdrop-filter: blur(5px);
+}
+.input-field:focus {
+  outline: none;
+  border: 2px solid #00ffcc !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 0 8px #00ffcc !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Placeholder Text */
+.reset-card input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.forgot-text {
+  color: #00ffcc;
+}
+
+.input-group-text {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-bottom-right-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+}
+
+.card-title {
+  color: #00ffcc !important;
+}
+.icon-color {
+  color: #00ffcc;
+}

@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+.reset-password-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../IMAGES/army.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.reset-card {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.5s ease-in-out;
+}
+
+.reset-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid transparent;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: rgb(57, 6, 109);
+  border: 2px solid #00f3ff !important;
+  background: #00f3ff;
+  box-shadow: 0 0 8px #00f3ff !important;
+}
+.btn:active {
+  color: white !important;
+  transform: scale(0.97);
+}
+
+.btn:disabled{
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 2px solid transparent !important;
+  color: white !important;
+}
+
+.reset-card.show:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 25px #00f3ff;
+}
+/* Transparent Input Fields */
+.input-field {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white !important;
+  backdrop-filter: blur(5px);
+}
+.input-field:active {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white !important;
+  backdrop-filter: blur(5px);
+}
+.input-field:focus {
+  outline: none;
+  border: 1px solid #00f3ff !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 0 10px #00f3ff !important;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/* Placeholder Text */
+.reset-card input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.forgot-text {
+  color: #00f3ff;
+}
+
+.input-group-text {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-bottom-right-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+}
+
+.card-title {
+  color: #00f3ff !important;
+}
+.icon-color{
+  color:#00f3ff;
+}

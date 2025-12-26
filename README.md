@@ -56,7 +56,7 @@ This project is a PHP & MySQL based web application and is designed to run on a 
      OR  
    - Clone using Git:
      
-     git clone https://github.com/Jaydip-Nagadakiya/army-management-system.git
+     git clone https://github.com/Jaydip-Nagdakiya/army-management-system.git
      
 
 2. *Move Project to XAMPP Directory*

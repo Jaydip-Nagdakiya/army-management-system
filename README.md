@@ -40,6 +40,74 @@ The system is designed with a strong focus on security, controlled access, and r
 
 ---
 
+## How to Run the Project (Local Setup)
+
+This project is a PHP & MySQL based web application and is designed to run on a local server environment such as XAMPP.
+
+### Prerequisites
+- XAMPP (Apache & MySQL)
+- Web browser (Chrome / Edge)
+- Git (optional, for cloning)
+
+### Steps to Run
+
+1. *Download or Clone the Project*
+   - Download ZIP from GitHub  
+     OR  
+   - Clone using Git:
+     
+     git clone https://github.com/Jaydip-Nagadakiya/army-management-system.git
+     
+
+2. *Move Project to XAMPP Directory*
+   - Copy the project folder
+   - Paste it inside:
+     
+     C:\xampp\htdocs\
+     
+   - Folder path should look like:
+     
+     C:\xampp\htdocs\army_management_system
+     
+
+3. *Start XAMPP Server*
+   - Open XAMPP Control Panel
+   - Start *Apache*
+   - Start *MySQL*
+
+4. *Import Database*
+   - Open browser and go to:
+     
+     http://localhost/phpmyadmin
+     
+   - Create a new database (e.g. army_management_system)
+   - Import the SQL file from:
+     
+     /Database/
+     
+
+5. *Configure Database Connection*
+   - Open:
+     
+     includes/db_connect.php
+     
+   - Update database credentials if required:
+     php
+     $host = "localhost";
+     $user = "root";
+     $password = "";
+     $database = "army_management_system";
+     
+
+6. *Run the Project*
+   - Open browser and visit:
+     
+     http://localhost/army_management_system/
+     
+
+---
+
+
 ## 🔑 Demo Login Credentials
 
 ### 👨‍💼 Admin (Demo)

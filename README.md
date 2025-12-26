@@ -90,6 +90,64 @@ This project includes OTP-based email verification for:
 - Dummy/demo credentials used for GitHub showcase
 
 ---
+
+## 📂 Project Structure
+
+army-management-system/
+│
+├── Database/                   # Database SQL file
+│   └── army_management.sql     # Database schema and demo data
+│
+├── admin/                      # Admin panel files
+│   ├── index.php               # Admin login page
+│   ├── dashboard.php           # Admin dashboard
+│   ├── forgot_password.php     # Admin forgot password
+│   └── ...                     # Other admin related modules
+│
+├── bootstrap/                  # Bootstrap framework files
+├── css/                        # Custom CSS files
+├── js/                         # JavaScript files
+├── images/                     # Static images
+├── uploads/                    # Uploaded files (profile photos, documents)
+│
+├── includes/                   # Common reusable files
+│   ├── db_connect.php          # Database connection file
+│   ├── header.php              # Common header
+│   └── footer.php              # Common footer
+│
+├── inventory/                  # Inventory related modules
+│
+├── index.php                   # Soldier login page
+├── homepage.php                # Soldier dashboard
+├── login_process.php           # Soldier login logic
+├── logout.php                  # Logout functionality
+│
+├── apply_leave.php             # Soldier leave application
+├── apply_leave_process.php     # Leave submission logic
+├── leave_status.php            # View leave status
+├── edit_leave.php              # Edit leave request
+├── edit_leave_process.php      # Update leave logic
+├── delete_leave.php            # Delete leave request
+│
+├── fetch_leave_status.php      # Fetch leave status (AJAX)
+├── fetch_notices.php           # Fetch notices
+├── notice.php                  # Notices page
+│
+├── mission.php                 # Mission details
+├── my_postings.php             # Posting details
+│
+├── profile.php                 # Soldier profile
+├── update_photo.php            # Update profile photo
+│
+├── forgot_password.php         # Soldier forgot password
+├── send_otp.php                # OTP generation & email logic
+├── verify_otp.php              # OTP verification
+├── update_password.php         # Password update after OTP
+│
+└── README.md                   # Project documentation
+
+---
+
 ## ⚠️ Disclaimer
 
 This project is developed for *educational and internship demonstration purposes only*.  
